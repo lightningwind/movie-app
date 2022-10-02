@@ -1,7 +1,9 @@
 function App() {
   return (
     <div className="container">
-      <h1>Movie App</h1>
+      <header>
+        <h1>Movie App</h1>
+      </header>
     </div>
   );
 }
