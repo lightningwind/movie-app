@@ -12,7 +12,7 @@ function App() {
   const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=be4b3906';
   
   const handleSearch = e => {
-    const requestURL = `${API_URL}&s=${state.searchQuery}`;
+    const requestURL = `${API_URL}&s=${state.searchQuery}&type=movie`;
     if (e.key === 'Enter') {
       axios
         .get(requestURL)
