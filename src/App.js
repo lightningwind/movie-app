@@ -17,7 +17,7 @@ function App() {
       axios
         .get(requestURL)
         .then( ({ data }) => {
-          const searchResults = data.Search; 
+          const searchResults = data.Search ? data.Search : []; 
           setState(prevState => {
             return { ...prevState, searchResults}
           })

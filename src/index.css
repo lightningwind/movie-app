@@ -47,3 +47,39 @@ section {
   font-size: 20px;
   font-weight: 300;
 }
+
+.results {
+  display: flex; 
+  flex-wrap: wrap; 
+  margin: 0px -15px; 
+}
+
+.result {
+  width: 33.33%;
+  min-width: 250px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+img.poster {
+  display: block;
+  width: 100%;
+}
+
+h3.title {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  background: #445565;
+  transition: 0.4s ease-out;
+  flex: 1 1 100%;
+}
+
+.result:hover > h3.title {
+  background: #FFF;
+  color: #223343
+}
